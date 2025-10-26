@@ -1,0 +1,16 @@
+../Core/Src/main.c:90:6:select_mux_channel	1
+../Core/Src/main.c:97:10:read_adc_by_index	6
+../Core/Src/main.c:130:7:voltage_to_temperature	4
+../Core/Src/main.c:173:6:send_address_claim	1
+../Core/Src/main.c:199:6:send_thermistor_summary	2
+../Core/Src/main.c:239:6:send_all_temps_to_esp	3
+../Core/Src/main.c:281:5:main	9
+../Core/Src/main.c:417:6:SystemClock_Config	3
+../Core/Src/main.c:464:13:MX_ADC1_Init	4
+../Core/Src/main.c:532:13:MX_ADC2_Init	3
+../Core/Src/main.c:591:13:MX_ADC3_Init	4
+../Core/Src/main.c:659:13:MX_ADC4_Init	3
+../Core/Src/main.c:718:13:MX_ADC5_Init	3
+../Core/Src/main.c:777:13:MX_FDCAN1_Init	2
+../Core/Src/main.c:820:13:MX_GPIO_Init	1
+../Core/Src/main.c:856:6:Error_Handler	1
