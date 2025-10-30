@@ -85,8 +85,8 @@ all: main-build
 main-build: TMS_CODE.elf secondary-outputs
 
 # Tool invocations
-TMS_CODE.elf TMS_CODE.map: $(OBJS) $(USER_OBJS) J:\TMS\ CODE\STM32G474RETX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
-	arm-none-eabi-g++ -o "TMS_CODE.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m4 -T"J:\TMS CODE\STM32G474RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="TMS_CODE.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -u _scanf_float -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
+TMS_CODE.elf TMS_CODE.map: $(OBJS) $(USER_OBJS) C:\Users\arthu\Documents\GitHub\TMS_CODE_Capibarib-E_racing\STM32G474RETX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
+	arm-none-eabi-g++ -o "TMS_CODE.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m4 -T"C:\Users\arthu\Documents\GitHub\TMS_CODE_Capibarib-E_racing\STM32G474RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="TMS_CODE.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -u _scanf_float -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
 	@echo 'Finished building target: $@'
 	@echo ' '
 
